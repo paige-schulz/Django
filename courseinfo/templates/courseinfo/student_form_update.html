@@ -6,10 +6,10 @@
 
 {% block content %}
     <form
-            action="{{ student.get_update_url }}"
-            method="post">
+        action="{{ student.get_update_url }}"
+        method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Update Student</button>
+        <button type="submit" class="button button-primary">Update Student</button>
     </form>
 {% endblock %}

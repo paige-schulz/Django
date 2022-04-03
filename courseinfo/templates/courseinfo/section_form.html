@@ -1,15 +1,16 @@
 {% extends 'courseinfo/base.html' %}
 
 {% block title %}
-    Create Instructor
+    Create Section
 {% endblock %}
 
 {% block content %}
     <form
-            action="{% url 'courseinfo_section_create_urlpattern' %}"
-            method="post">
+        action="{% url 'courseinfo_section_create_urlpattern'%}"
+        method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Create Section</button>
+        <button type="submit" class="button button-primary">
+        Create Section</button>
     </form>
 {% endblock %}
