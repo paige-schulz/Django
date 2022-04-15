@@ -75,11 +75,11 @@ urlpatterns = [
 
     path('course/',
          CourseList.as_view(),
-         name='courseinfo_courses_list_urlpattern'),
+         name='courseinfo_course_list_urlpattern'),
 
     path('course/<int:pk>/',
          CourseDetail.as_view(),
-         name='courseinfo_courses_detail_urlpattern'),
+         name='courseinfo_course_detail_urlpattern'),
 
     path('course/create/',
          CourseCreate.as_view(),

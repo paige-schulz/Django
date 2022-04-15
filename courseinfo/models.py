@@ -62,7 +62,7 @@ class Course(models.Model):
         return '%s - %s' % (self.course_number, self.course_name)
 
     def get_absolute_url(self):
-        return reverse('courseinfo_courses_detail_urlpattern',
+        return reverse('courseinfo_course_detail_urlpattern',
                        kwargs={'pk': self.pk})
 
     def get_update_url(self):
