@@ -34,7 +34,7 @@ def remove_group_data(apps, schema_editor):
 
 class Migration(migrations.Migration):
     dependencies = [
-        ('courseinfo', '0005_load_instudent_test_data'),
+        ('courseinfo', '0003_auto_20220218_1448'),
     ]
 
     operations = [
